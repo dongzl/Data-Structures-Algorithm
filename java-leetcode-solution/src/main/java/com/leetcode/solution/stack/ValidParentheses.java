@@ -11,9 +11,9 @@ import java.util.Stack;
  */
 public class ValidParentheses {
 
-    private Map<Character, Character> mapping = new HashMap<>();
-
     public boolean isValid(String s) {
+        Map<Character, Character> mapping = new HashMap<>();
+        Stack<Character> stack = new Stack<>();
         mapping.put(')', '(');
         mapping.put(']', '[');
         mapping.put('}', '{');
@@ -23,6 +23,18 @@ public class ValidParentheses {
         }
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
+            if (mapping.containsKey(c)) {
+                Character character = stack.pop();
+                if (character == null) {
+                    return false;
+                }
+                if (!character.equals(mapping.get(c))) {
+                    return false;
+                }
+            } else {
+                stack.push(c);
+            }
         }
+        return stack.isEmpty();
     }
 }
