@@ -24,7 +24,7 @@ public class ValidParentheses {
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (mapping.containsKey(c)) {
-                Character character = stack.pop();
+                Character character = stack.isEmpty() ? '#' : stack.pop();
                 if (character == null) {
                     return false;
                 }
@@ -36,5 +36,10 @@ public class ValidParentheses {
             }
         }
         return stack.isEmpty();
+    }
+
+    public static void main(String args[]) throws Exception {
+        ValidParentheses parentheses = new ValidParentheses();
+        System.out.println(parentheses.isValid("]"));
     }
 }
