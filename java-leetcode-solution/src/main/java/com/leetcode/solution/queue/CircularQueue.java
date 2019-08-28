@@ -2,7 +2,7 @@ package com.leetcode.solution.queue;
 
 /**
  * @author dongzonglei
- * @description
+ * @description 循环队列实现
  * @date 2019-08-27 17:09
  */
 public class CircularQueue {
