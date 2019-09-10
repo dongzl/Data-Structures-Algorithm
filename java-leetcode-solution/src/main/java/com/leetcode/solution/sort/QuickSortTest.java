@@ -2,7 +2,7 @@ package com.leetcode.solution.sort;
 
 /**
  * @author dongzonglei
- * @description
+ * @description 快排测试代码
  * @date 2019-09-03 17:48
  */
 public class QuickSortTest {
