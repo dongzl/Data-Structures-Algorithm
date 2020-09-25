@@ -3,18 +3,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <!-- 基本信息 -->
-    <description>leetcode学习源码</description>
+    <description>数据结构与算法分析学习源码</description>
     <modelVersion>4.0.0</modelVersion>
-    <name>leetcode-solution</name>
+    <name>Data-Structures-Algorithm</name>
     <packaging>pom</packaging>
 
     <!-- 项目说明：这里作为聚合工程的父工程 -->
-    <groupId>com.leetcode.solution</groupId>
-    <artifactId>leetcode-solution</artifactId>
+    <groupId>com.algorithm.solution</groupId>
+    <artifactId>Data-Structures-Algorithm</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <modules>
         <module>java-leetcode-solution</module>
+        <module>java-comic-algorithm</module>
     </modules>
 
     <build>

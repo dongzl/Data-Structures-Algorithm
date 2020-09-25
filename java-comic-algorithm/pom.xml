@@ -8,10 +8,10 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <groupId>com.algorithm.solution</groupId>
-    <artifactId>java-leetcode-solution</artifactId>
+    <artifactId>java-comic-algorithm</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>java-leetcode-solution</name>
-    <description>JAVA LeetCode Solution</description>
+    <name>java-comic-algorithm</name>
+    <description>Java Comic Algorithm</description>
 
     <properties>
         <java.version>1.8</java.version>
